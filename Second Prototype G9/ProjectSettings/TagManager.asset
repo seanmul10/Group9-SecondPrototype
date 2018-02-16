@@ -9,6 +9,7 @@ TagManager:
   - PlayerBulletTag
   - EnemyBulletTag
   - GcuBuilding
+  - Canvas
   layers:
   - Default
   - TransparentFX

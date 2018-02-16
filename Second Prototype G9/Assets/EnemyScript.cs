@@ -6,7 +6,6 @@ public class EnemyScript : MonoBehaviour
 {
     public float studentEnergy = 0f; // player increases this var when they hit the enemy
     public bool isLazy = true; // if studentEnergy reaches a certain number, this becomes false (PlayerBullet script)
-    public static bool laziness;
     SpriteRenderer sr;
     public Sprite geek; // enemy turns into this sprite once it gets enough energy
 
@@ -37,7 +36,6 @@ public class EnemyScript : MonoBehaviour
             Destroy(gameObject);
         }
 
-        laziness = isLazy;
     }
 
     void OnTriggerEnter2D(Collider2D col)

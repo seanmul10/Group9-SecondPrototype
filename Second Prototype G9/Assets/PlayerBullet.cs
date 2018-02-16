@@ -29,4 +29,15 @@ public class PlayerBullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "EnemyShipTag")
+        {
+            bool lazy = col.GetComponent<EnemyScript>().isLazy;
+            if (lazy == true)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
 }
